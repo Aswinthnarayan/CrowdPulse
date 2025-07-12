@@ -25,21 +25,14 @@ This project aims to help authorities and event organizers prevent stampedes and
 ## 🖼️ Example Forecast Visualizations
 
 <p align="center">
-  <img src="assets/zone_A.png" width="600"/>
-  <br>
-  <i>Zone A - Forecast with Surge Detection</i>
-</p>
+  <img src="assets/zone_a_forecast.png" width="600"/><br>
+  <em>Zone A - Forecast with Surge Detection</em><br><br>
 
-<p align="center">
-  <img src="assets/zone_B.png" width="600"/>
-  <br>
-  <i>Zone B - Forecast with Surge Detection</i>
-</p>
+  <img src="assets/zone_b_forecast.png" width="600"/><br>
+  <em>Zone B - Forecast with Surge Detection</em><br><br>
 
-<p align="center">
-  <img src="assets/zone_C.png" width="600"/>
-  <br>
-  <i>Zone C - Forecast with Surge Detection</i>
+  <img src="assets/zone_c_forecast.png" width="600"/><br>
+  <em>Zone C - Forecast with Surge Detection</em>
 </p>
 
 > **Note**: Screenshots should be stored inside the `assets/` folder in your GitHub repository.

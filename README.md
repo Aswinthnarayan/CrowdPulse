@@ -1,35 +1,73 @@
 # 🚦 CrowdPulse: Real-Time Crowd Monitoring Using Wi-Fi Probe Logs
 
-📍 **Live App**: [Click to Open](https://crowdpulse-n2kmupxkwfrnchrsshj8fo.streamlit.app/)
+📍 **Live App**: [Click to Open Streamlit App](https://crowdpulse-n2kmupxkwfrnchrsshj8fo.streamlit.app/)
+
+---
 
 ## 📊 Overview
-CrowdPulse is a real-time crowd monitoring dashboard that analyzes Wi-Fi probe logs to detect and forecast crowd surges in multiple zones. It uses Facebook Prophet to forecast future crowd density and flags anomalies above a dynamic surge threshold.
+
+**CrowdPulse** is a real-time analytics dashboard that forecasts crowd density in public zones by analyzing Wi-Fi probe requests from mobile devices. It applies time-series forecasting using Facebook Prophet and detects abnormal surges with dynamic thresholding.
+
+This project aims to help authorities and event organizers prevent stampedes and overcrowding incidents by providing real-time crowd insights.
+
+---
 
 ## 🔧 Features
-- 📈 Time-series forecasting for device counts per zone
-- 🚨 Surge detection with dynamic thresholds
-- 🕒 Minute-level resolution of Wi-Fi logs
-- 📉 Visual plots with confidence intervals and anomaly marking
 
-## 🗂️ File Structure
+- 📡 Analyzes Wi-Fi probe logs for crowd estimation
+- 📈 Time-series forecasting using Facebook Prophet
+- 🚨 Surge detection based on dynamic thresholds
+- 🕒 Minute-level resolution with sliding time windows
+- 📊 Streamlit-based dashboard with interactive zone selection
 
-| File | Description |
-|------|-------------|
-| `app.py` | Main Streamlit app |
-| `wifi_probe_log.csv` | Input dataset with timestamped zone counts |
-| `requirements.txt` | Python dependencies |
+---
 
-## 🖼️ Sample Visuals
+## 🖼️ Example Forecast Visualizations
 
-<img src="https://raw.githubusercontent.com/yourusername/crowdpulse/main/sample_forecast_zone_A.png" width="600"/>
-<img src="https://raw.githubusercontent.com/yourusername/crowdpulse/main/sample_forecast_zone_C.png" width="600"/>
+<p align="center">
+  <img src="assets/zone_A.png" width="600"/>
+  <br>
+  <i>Zone A - Forecast with Surge Detection</i>
+</p>
 
-> 💡 Replace these image URLs with your actual screenshots after uploading them to GitHub!
+<p align="center">
+  <img src="assets/zone_B.png" width="600"/>
+  <br>
+  <i>Zone B - Forecast with Surge Detection</i>
+</p>
 
-## ▶️ How to Run Locally
+<p align="center">
+  <img src="assets/zone_C.png" width="600"/>
+  <br>
+  <i>Zone C - Forecast with Surge Detection</i>
+</p>
+
+> **Note**: Screenshots should be stored inside the `assets/` folder in your GitHub repository.
+
+---
+
+## 📂 File Structure
+
+| File/Folder | Description |
+|-------------|-------------|
+| `app.py` | Main Streamlit application |
+| `wifi_probe_log.csv` | Sample input data containing timestamped zone device counts |
+| `requirements.txt` | Python dependencies for the project |
+| `assets/` | Folder containing all visual screenshots |
+| `README.md` | This documentation file |
+
+---
+
+## ▶️ Run Locally
 
 ```bash
-git clone https://github.com/yourusername/crowdpulse.git
-cd crowdpulse
+# Clone the repository
+git clone https://github.com/Aswinthnarayan/CrowdPulse.git
+cd CrowdPulse
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the app
 streamlit run app.py
+
